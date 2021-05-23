@@ -36,7 +36,7 @@ class CastilloApp extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
+              padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
               child: TextField(
                 decoration: InputDecoration(
                   border: OutlineInputBorder(),
