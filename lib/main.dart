@@ -2,7 +2,12 @@ import 'package:flutter/material.dart';
 
 void main() => runApp(CastilloApp());
 
-class CastilloApp extends StatelessWidget {
+class CastilloApp extends StatefulWidget {
+  @override
+  _CastilloAppState createState() => _CastilloAppState();
+}
+
+class _CastilloAppState extends State<CastilloApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -34,7 +39,7 @@ class CastilloApp extends StatelessWidget {
                   labelText: 'Nombre del cliente',
                 ),
               ),
-            ),
+            ),//fin de padding
             Padding(
               padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
               child: TextField(
@@ -43,7 +48,36 @@ class CastilloApp extends StatelessWidget {
                   labelText: 'Sabor del helado',
                 ),
               ),
-            ),
+            ),//fin de padding
+            Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+                  Padding(
+              padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
+              child: DropdownButton(
+                value: _value,
+            items: [
+              DropdownMenuItem(
+                child: Text("Vaso"),
+                value: 1,
+              ),
+              DropdownMenuItem(
+                child: Text("Cono"),
+                value: 2,
+              )
+            ],
+             
+            onChanged: (int value) {
+              setState(() {
+                _value = value;
+              });
+            },
+            hint:Text("Select item")
+              ),
+              ),
+            ),//fin de padding
+                ],//fin de <widget>
+              ),//fin de row
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
@@ -67,11 +101,11 @@ class CastilloApp extends StatelessWidget {
                   padding: EdgeInsets.symmetric(vertical:15,horizontal: 30 ),
                   onPressed: () {},
                 ), //fin raised button
-              ],
-            ),
-          ],
-        ),
-      ),
+              ],//fin de <widget>
+            ),//fin de row
+          ],//fin de <widget>
+        ),//fin de column
+      ),//fin de scaffold
     );
   }
 }
