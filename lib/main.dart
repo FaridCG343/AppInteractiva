@@ -49,7 +49,7 @@ class CastilloApp extends StatelessWidget {
               children: <Widget>[
                 RaisedButton(
                   child: Text(
-                    'Cancelar'
+                    'Cancelar',
                     style: TextStyle(
                       fontSize:20,
                     ),
