@@ -74,7 +74,6 @@ class _CastilloAppState extends State<CastilloApp> {
             },
             hint:Text("Select item")
               ),
-              ),
             ),//fin de padding
                 ],//fin de <widget>
               ),//fin de row
