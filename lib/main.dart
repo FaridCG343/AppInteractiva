@@ -50,6 +50,7 @@ class CastilloApp extends StatelessWidget {
                 
                 RaisedButton(
                   child: Text('Cancelar'),
+                  heigth:20,
                   onPressed: () {},
                 ), //fin flat button
                 RaisedButton(
