@@ -83,6 +83,10 @@ class _CastilloAppState extends State<CastilloApp> {
                 value: _value2,
             items: [
               DropdownMenuItem(
+                child: Text("Ingrediente"),
+                value: 0,
+              ),
+              DropdownMenuItem(
                 child: Text("Chocolate"),
                 value: 1,
               ),
