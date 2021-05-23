@@ -10,7 +10,7 @@ class CastilloApp extends StatefulWidget {
 class _CastilloAppState extends State<CastilloApp> {
   @override
   int _value = 1;
-  int _value2 = 1;
+  int _value2 = 0;
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
