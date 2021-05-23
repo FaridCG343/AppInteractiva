@@ -51,7 +51,7 @@ class CastilloApp extends StatelessWidget {
                   child: Text(
                     'Cancelar',
                     style: TextStyle(
-                      fontSize:20,
+                      fontSize:15,
                     ),
                   ),
                   padding: EdgeInsets.symmetric(vertical:15,horizontal: 30 ),
@@ -61,7 +61,7 @@ class CastilloApp extends StatelessWidget {
                   child: Text(
                     'Confirmar',
                     style: TextStyle(
-                      fontSize:20,
+                      fontSize:15,
                     ),
                   ),
                   padding: EdgeInsets.symmetric(vertical:15,horizontal: 30 ),
