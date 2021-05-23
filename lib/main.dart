@@ -32,7 +32,7 @@ class _CastilloAppState extends State<CastilloApp> {
         ),
         body: Column(
           children: <Widget>[
-            Padding(padding: EdgeInsets.fromLTRB(10, 10, 10, 0), child: Image.asset("assets/helados.jpg")),
+            Padding(padding: EdgeInsets.fromLTRB(10, 10, 10, 0), child: Image.asset("assets/helados.jpg", width:500)),
             Padding(
               padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
               child: TextField(
