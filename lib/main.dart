@@ -10,6 +10,7 @@ class CastilloApp extends StatefulWidget {
 class _CastilloAppState extends State<CastilloApp> {
   @override
   int _value = 1;
+  int _value2 = 1;
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
@@ -53,8 +54,8 @@ class _CastilloAppState extends State<CastilloApp> {
             Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
-                  Padding(
-              padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
+              Padding(
+              padding: EdgeInsets.fromLTRB(10, 0, 10, 10),
               child: DropdownButton(
                 value: _value,
             items: [
@@ -76,8 +77,35 @@ class _CastilloAppState extends State<CastilloApp> {
             hint:Text("Select item")
               ),
             ),//fin de padding
-                ],//fin de <widget>
-              ),//fin de row
+            Padding(
+              padding: EdgeInsets.fromLTRB(10, 0, 10, 10),
+              child: DropdownButton(
+                value: _value,
+            items: [
+              DropdownMenuItem(
+                child: Text("Chocolate"),
+                value: 1,
+              ),
+              DropdownMenuItem(
+                child: Text("Gomitas"),
+                value: 2,
+              )
+              DropdownMenuItem(
+                child: Text("Nuez"),
+                value: 3,
+              )
+            ],
+             
+            onChanged: (int value) {
+              setState(() {
+                _value = value;
+              });
+            },
+            hint:Text("Select item")
+              ),
+            ),//fin de padding
+              ],//fin de <widget>
+            ),//fin de row
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
