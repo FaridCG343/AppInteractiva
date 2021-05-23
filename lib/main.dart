@@ -45,7 +45,9 @@ class CastilloApp extends StatelessWidget {
               ),
             ),
             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
+                
                 RaisedButton(
                   child: Text('Cancelar'),
                   onPressed: () {},
