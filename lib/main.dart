@@ -80,7 +80,7 @@ class _CastilloAppState extends State<CastilloApp> {
             Padding(
               padding: EdgeInsets.fromLTRB(10, 0, 10, 10),
               child: DropdownButton(
-                value: _value,
+                value: _value2,
             items: [
               DropdownMenuItem(
                 child: Text("Chocolate"),
@@ -98,7 +98,7 @@ class _CastilloAppState extends State<CastilloApp> {
              
             onChanged: (int value) {
               setState(() {
-                _value = value;
+                _value2 = value;
               });
             },
             hint:Text("Select item")
