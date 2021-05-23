@@ -49,14 +49,14 @@ class CastilloApp extends StatelessWidget {
               children: <Widget>[
                 RaisedButton(
                   child: Text('Cancelar'),
-                  padding: EdgeInsets.symmetric(vertical:20,horizontal: 30 ),
+                  padding: EdgeInsets.symmetric(vertical:15,horizontal: 30 ),
                   onPressed: () {},
                 ), //fin flat button
                 RaisedButton(
                   child: Text(
                     'Confirmar',
                   ),
-                  padding: EdgeInsets.symmetric(vertical:20,horizontal: 30 ),
+                  padding: EdgeInsets.symmetric(vertical:15,horizontal: 30 ),
                   onPressed: () {},
                 ), //fin raised button
               ],
